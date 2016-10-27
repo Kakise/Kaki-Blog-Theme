@@ -1,0 +1,29 @@
+/*
+* CSS Theme for Kaki-Blog
+* Under GPL-3
+* Copyright Kakise <me@kakise.xyz> 2016
+*/
+
+div .uk-grid {
+  margin-bottom: 50px;
+}
+
+.lead {
+  font-size: 16px;
+}
+
+footer{
+  position: fixed;
+  bottom:0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #031120;
+}
+
+footer p{
+  text-align: center;
+}

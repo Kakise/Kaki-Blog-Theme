@@ -1,5 +1,6 @@
 {
   "name" : "Night Kaki",
   "version" : "1.0",
-  "includes" : ["css/uikit.min.css", "css/site.css", "js/uikit.min.js"]
+  "css" : ["css/uikit.min.css", "css/site.css"], 
+  "javascript" : ["js/uikit.min.js"]
 }
