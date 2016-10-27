@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  p(class="lead") Bienvenue sur mon tout nouveau blog ! :) 
+    br
+    | Le code source est disponible juste ici: 
+    a(href="https://github.com/Kakise/Kaki-Blog") Kaki-Blog
+    |.
+  
+  article(class="uk-article")
+    each article in articles
+      div(class="list-blog-header")
+        h1(class="uk-article-title" style="color: #739a99") #{article.title}
+        p(class="uk-article-meta") #{article.date}
+        hr
+        div(class="list-blog-padding")!= md(article.content.substring(0, 255) + "...") 
+        br
+        a(href="/article/" + article.id + "/" + article.slug) Lire la suite !
