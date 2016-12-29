@@ -2,7 +2,13 @@ doctype html
 html(lang="fr")
 
   head
-    title Accueil | #{config.name}
+    if ( article )
+      title #{ article } | #{config.name}
+    else if (page)
+      title #{ page } | #{config.name}
+    else
+      title Accueil | #{config.name}
+   
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
