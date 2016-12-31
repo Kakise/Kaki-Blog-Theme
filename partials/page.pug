@@ -1,6 +1,6 @@
 extends layout.pug
 
 block content
-  h2 #{title}
+  h2 #{page.title}
   
-  article(class="uk-article")!= md(content)
+  article(class="uk-article")!= md(page.content)
