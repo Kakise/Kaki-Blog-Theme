@@ -5,7 +5,7 @@ html(lang="fr")
     if ( article )
       title #{ article } | #{config.name}
     else if (page)
-      title #{ page } | #{config.name}
+      title #{ page.title } | #{config.name}
     else
       title Accueil | #{config.name}
    
